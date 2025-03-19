@@ -21,10 +21,6 @@ const db = async () => {
 
 db();
 
-app.get("/", () => {
-  console.log("simple get request ");
-});
-
 app.use('/api/user',authRouter)
 
 app.listen(3000, () => {
