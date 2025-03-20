@@ -123,13 +123,13 @@ export default function Landingpage() {
                 {
                     menuItems.map((item,index) => (
                         <div key={index}>
-                            <p className='text-sm pt-2 text-zinc-600' >{item.title}</p>
+                            <p className='text-sm pt-2 text-zinc-700 font-bold' >{item.title}</p>
                             <div >
                                 {
                                     item.items.map((inner_items,index) => (
                                         <div key={index} className='py-1'>
                                             {/* <img src={inner_items.icon}></img> */}
-                                            <Link to={inner_items.href} className='pl-4 text-sm'>{inner_items.label}</Link>
+                                            <Link to={inner_items.href} className='pl-4 text-sm font-bold text-zinc-500'>{inner_items.label}</Link>
                                         </div>
                                     ))
                                 }
@@ -137,12 +137,6 @@ export default function Landingpage() {
                         </div>
                     ))
                 }
-                {/* <ul className='flex flex-col space-x-2 '>
-                    <li><Link to='/1'>1</Link></li>
-                    <li><Link to='/2'>2</Link></li>
-                    <li><Link to='/3'>3</Link></li>
-                    <li><Link to='/4'>4</Link></li>
-                </ul> */}
             </div>
         </div>
     )
