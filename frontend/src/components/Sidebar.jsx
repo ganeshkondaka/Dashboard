@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Landingpage() {
+export default function Sidebar() {
     const menuItems = [
         {
             title: "MENU",
@@ -123,13 +123,13 @@ export default function Landingpage() {
                 {
                     menuItems.map((item,index) => (
                         <div key={index}>
-                            <p className='text-sm pt-2 text-zinc-700 font-bold' >{item.title}</p>
+                            <p className='text-sm pt-2 text-zinc-700'>{item.title}</p>
                             <div >
                                 {
                                     item.items.map((inner_items,index) => (
                                         <div key={index} className='py-1'>
                                             {/* <img src={inner_items.icon}></img> */}
-                                            <Link to={inner_items.href} className='pl-4 text-sm font-bold text-zinc-500'>{inner_items.label}</Link>
+                                            <Link to={inner_items.href} className='pl-4 text-xs text-zinc-500'>{inner_items.label}</Link>
                                         </div>
                                     ))
                                 }
