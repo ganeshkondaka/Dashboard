@@ -5,10 +5,10 @@ import { GrAnnounce } from "react-icons/gr";
 
 export default function Topbar() {
     return (
-        <div className='flex justify-between w-full h-10 items-center px-6 '>
-            <div className='flex flex-row items-center gap-4 rounded border-2 px-2'>
+        <div className='flex justify-between w-full h-10 items-center px-6  my-2'>
+            <div className='flex flex-row items-center gap-4 rounded-full border-2 p-2'>
                 <CiSearch></CiSearch>
-                <input type="text" placeholder='search..' />
+                <input type="text" placeholder='search..' className='bg-transparent outline-none'/>
             </div>
             <div className='flex flex-row items-center gap-6'>
                 <LuMessageCircleMore className='text-zinc-600'></LuMessageCircleMore>

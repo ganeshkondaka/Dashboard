@@ -6,7 +6,7 @@ import Linechart from '../charts/Linechart'
 import Eventcalender from '../charts/Eventcalender'
 import Announcements from '../charts/Announcements'
 
-export default function One() {
+export default function Home() {
   return (
     <div className='grid grid-cols-3 gap-2 h-full'>
       <div className='col-span-2  p-2 space-y-4'>

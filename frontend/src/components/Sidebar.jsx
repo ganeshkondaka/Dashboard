@@ -117,12 +117,12 @@ export default function Sidebar() {
         },
     ];
     return (
-        <div className='h-full p-4  w-52 '>
+        <div className='h-screen p-4 w-52 '>
             <p className='text-zinc-700 font-bold py-3 text-center'>Dashboard</p>
-            <div>
+            <div className='h-screen'>
                 {
                     menuItems.map((item,index) => (
-                        <div key={index}>
+                        <div key={index} >
                             <p className='text-sm pt-2 text-zinc-700'>{item.title}</p>
                             <div >
                                 {
